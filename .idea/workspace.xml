@@ -7,23 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52ef669d-5398-43e8-9d81-f17e164b0c47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/service/ILocationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/service/IWeatherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/service/RestInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomorrow/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weatherapp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weatherapp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/weather_app_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/weather_app_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/ApiProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/ApiProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/controller/WeatherController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/domain/UserInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/service/LocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/service/WeatherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/weather/controller/SearchControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/weather/controller/SearchControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/weather/controller/WeatherSummaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/weather/controller/WeatherSummaryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/weather/domain/UserInputTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/weather/service/WeatherServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/weather/service/WeatherServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/weather_app_jar/weather-app.jar" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/weather_app_jar/weather-app.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +48,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="weatherapp" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -74,6 +69,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Desktop\predictTemperature\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.weather.controller" />
       <recent name="com.example.weather.exception" />
@@ -147,7 +145,7 @@
       <updated>1571281749553</updated>
       <workItem from="1571281753870" duration="44680000" />
       <workItem from="1571406549232" duration="744000" />
-      <workItem from="1571411374797" duration="3310000" />
+      <workItem from="1571411374797" duration="5053000" />
     </task>
     <servers />
   </component>
