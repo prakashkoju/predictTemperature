@@ -1,6 +1,6 @@
 package com.example.weather.service;
 
-import com.example.weather.ApiProperties;
+import com.example.weather.ApiProperty;
 import com.example.weather.domain.Weather;
 import org.junit.After;
 import org.junit.Before;
@@ -150,7 +150,7 @@ public class WeatherServiceImplTest {
     }
 
     private void intializeWeatherService(String Key, String url) {
-        ApiProperties properties = new ApiProperties();
+        ApiProperty properties = new ApiProperty();
         properties.getApi().setKey(Key);
         properties.getApi().setUrl(url);
         this.weatherService = new WeatherService(restTemplate, properties);

@@ -1,10 +1,10 @@
 package com.example.weather.controller;
 
-import com.example.weather.ApiProperties;
+import com.example.weather.ApiProperty;
 import com.example.weather.domain.Location;
 import com.example.weather.domain.Weather;
-import com.example.weather.domain.UserInput;
-import com.example.weather.domain.Zipcode;
+import com.example.weather.service.ILocationService;
+import com.example.weather.service.IWeatherService;
 import com.example.weather.service.LocationService;
 import com.example.weather.service.WeatherService;
 import org.slf4j.Logger;
@@ -20,18 +20,17 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Controller
 public class SearchController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(SearchController.class);
 
-	private final WeatherService weatherService;
-	private final LocationService locationService;
+	private final IWeatherService weatherService;
+	private final ILocationService locationService;
 
-	private final ApiProperties properties;
+	private final ApiProperty properties;
 
-	public SearchController(WeatherService weatherService, ApiProperties properties, LocationService locationService) {
+	public SearchController(IWeatherService weatherService, ApiProperty properties, ILocationService locationService) {
 		this.weatherService = weatherService;
 		this.properties = properties;
 		this.locationService=locationService;
@@ -40,20 +39,20 @@ public class SearchController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView showWeatherSearchForm() {
 		LOGGER.debug("Received request for weather search view");
-		return new ModelAndView("weather_search", "searchForm", new UserInput());
+		return new ModelAndView("weather_search", "searchForm", new LocationViewModel());
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.POST)
-	public ModelAndView searchWeather(@Valid @ModelAttribute("searchForm") UserInput form, BindingResult bindingResult) {
-		LOGGER.debug("Received request to search weather {}, with result={}", form, bindingResult);
+	public ModelAndView searchWeather(@Valid @ModelAttribute("searchForm") LocationViewModel locationViewModel, BindingResult bindingResult) {
+		LOGGER.debug("Received request to search weather {}, with result={}", locationViewModel, bindingResult);
 		String view = "weather_search";	//if city=="" stick in main view page
 		ModelMap model = new ModelMap();
-		if(!"".equals(form.getZip())){
-			List<Location> location=this.locationService.getLocation(form.getZip());
-			if(location.stream().flatMap(location1 ->
-					location1.getZipcodes().stream()).filter(zipcode -> zipcode.getZipcode().equals(form.getZip()))
+		if(!"".equals(locationViewModel.getZip())){
+			List<Location> location=this.locationService.getLocation(locationViewModel.getZip());
+			if(location.stream().flatMap(l ->
+					l.getZipcodes().stream()).filter(z -> z.getZipcode().equals(locationViewModel.getZip()))
 					.count()>0){
-				List<WeatherController> weatherSummaryList = getSummary(location.get(0).zipcodes.get(0).getDefault_city());
+				List<WeatherViewModel> weatherSummaryList = getSummary(location.get(0).zipcodes.get(0).getDefault_city());
 				if (weatherSummaryList != null && weatherSummaryList.size() > 0) {
 					view = "weather_summary";
 					model.addAttribute("weather_summary", weatherSummaryList);
@@ -61,8 +60,8 @@ public class SearchController {
 			}
 		}
 
-		else if (!"".equals(form.getCity())) {
-			List<WeatherController> weatherSummaryList = getSummary(form.getCity());
+		else if (!"".equals(locationViewModel.getCity())) {
+			List<WeatherViewModel> weatherSummaryList = getSummary(locationViewModel.getCity());
 			if (weatherSummaryList != null && weatherSummaryList.size() > 0) {
 				view = "weather_summary";
 				model.addAttribute("weather_summary", weatherSummaryList);
@@ -71,11 +70,11 @@ public class SearchController {
 		return new ModelAndView(view, model);
 	}
 
-	protected List<WeatherController> getSummary(String city){
-		List<WeatherController> summary = new ArrayList<>();
+	protected List<WeatherViewModel> getSummary(String city){
+		List<WeatherViewModel> summary = new ArrayList<>();
 		Weather weather = this.weatherService.getWeather(city);
 		if(weather!=null) {
-			summary.add(new WeatherController(city, weather));
+			summary.add(new WeatherViewModel(city, weather));
 		}
 		return summary;
 	}

@@ -1,6 +1,6 @@
 package com.example.weather.service;
 
-import com.example.weather.ApiProperties;
+import com.example.weather.ApiProperty;
 import com.example.weather.domain.Weather;
 import com.example.weather.exception.OWMResponseErrorHandler;
 import org.slf4j.Logger;
@@ -16,7 +16,7 @@ import org.springframework.web.util.UriTemplate;
 import java.net.URI;
 
 @Service
-public class WeatherService {
+public class WeatherService implements IWeatherService {
 
 	private static final Logger logger = LoggerFactory.getLogger(WeatherService.class);
 
@@ -26,7 +26,7 @@ public class WeatherService {
 
 	private final String apiKey;
 
-	public WeatherService(RestTemplate restTemplate, ApiProperties properties) {
+	public WeatherService(RestTemplate restTemplate, ApiProperty properties) {
 		this.restTemplate = restTemplate;
 		this.restTemplate.setErrorHandler(new OWMResponseErrorHandler());
 		this.apiKey = properties.getApi().getKey();
@@ -41,7 +41,7 @@ public class WeatherService {
 		if(validParameters(city)) {
 			URI url = new UriTemplate(this.apiUrl).expand(city, this.apiKey);
 
-			weather = invoke(url, Weather.class);
+			weather = RestInterface.invoke(restTemplate,url, Weather.class);
 		}
 		return weather;
 	}
@@ -50,18 +50,4 @@ public class WeatherService {
 		return city !=null && !"".equals(city) && apiKey !=null && !"".equals(apiKey) && apiUrl!=null && !"".equals(apiUrl);
 	}
 
-	private <T> T invoke(URI url, Class<T> responseType){
-		T respondingClass = null;
-		try {
-			RequestEntity<?> request = RequestEntity.get(url)
-													.accept(MediaType.APPLICATION_JSON).build();
-			ResponseEntity<T> exchange = this.restTemplate
-					 						 .exchange(request, responseType);
-			respondingClass = exchange.getBody();
-		} catch(Exception e){
-				logger.error("An error occurred while calling openweathermap.org API endpoint:  " + e.getMessage());
-		}
-
-		return respondingClass;
-	}
 }

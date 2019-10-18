@@ -1,6 +1,6 @@
 package com.example.weather.controller;
 
-import com.example.weather.ApiProperties;
+import com.example.weather.ApiProperty;
 import com.example.weather.domain.Weather;
 import com.example.weather.service.LocationService;
 import com.example.weather.service.WeatherService;
@@ -15,8 +15,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-
-import java.time.LocalDate;
 
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.junit.Assert.assertNotNull;
@@ -57,7 +55,7 @@ public class SearchControllerTest {
 
     @Test
     public void verifyCreateWeatherSearchControllerObject(){
-        SearchController weatherSearchController = new SearchController(weatherService,new ApiProperties(),locationService);
+        SearchController weatherSearchController = new SearchController(weatherService,new ApiProperty(),locationService);
         assertNotNull(weatherSearchController);
     }
 

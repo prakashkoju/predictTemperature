@@ -15,7 +15,7 @@ import static org.junit.Assert.assertNotNull;
 
 public class WeatherSummaryTest {
     private static final String CITY = "London";
-    private WeatherController weatherSummary;
+    private WeatherViewModel weatherSummary;
     private Weather weather;
 
 
@@ -24,7 +24,7 @@ public class WeatherSummaryTest {
         ObjectMapper mapper = new ObjectMapper();
         weather = mapper.readValue(new ClassPathResource("london.json", WeatherService.class).getInputStream(),
                 Weather.class);
-        weatherSummary = new WeatherController(CITY, weather);
+        weatherSummary = new WeatherViewModel(CITY, weather);
     }
 
     @After
