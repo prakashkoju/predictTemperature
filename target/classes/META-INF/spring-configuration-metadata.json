@@ -2,40 +2,40 @@
   "hints": [],
   "groups": [
     {
-      "sourceType": "com.example.weather.ApiProperty",
+      "sourceType": "com.example.weather.apiProperty.ApiProperty",
       "name": "app.weather",
-      "type": "com.example.weather.ApiProperty"
+      "type": "com.example.weather.apiProperty.ApiProperty"
     },
     {
-      "sourceType": "com.example.weather.ApiProperty",
+      "sourceType": "com.example.weather.apiProperty.ApiProperty",
       "name": "app.weather.api",
       "sourceMethod": "getApi()",
-      "type": "com.example.weather.ApiProperty$Api"
+      "type": "com.example.weather.apiProperty.ApiProperty$Api"
     }
   ],
   "properties": [
     {
-      "sourceType": "com.example.weather.ApiProperty$Api",
+      "sourceType": "com.example.weather.apiProperty.ApiProperty$Api",
       "name": "app.weather.api.auth-id",
       "type": "java.lang.String"
     },
     {
-      "sourceType": "com.example.weather.ApiProperty$Api",
+      "sourceType": "com.example.weather.apiProperty.ApiProperty$Api",
       "name": "app.weather.api.key",
       "type": "java.lang.String"
     },
     {
-      "sourceType": "com.example.weather.ApiProperty$Api",
+      "sourceType": "com.example.weather.apiProperty.ApiProperty$Api",
       "name": "app.weather.api.location-url",
       "type": "java.lang.String"
     },
     {
-      "sourceType": "com.example.weather.ApiProperty$Api",
+      "sourceType": "com.example.weather.apiProperty.ApiProperty$Api",
       "name": "app.weather.api.token-id",
       "type": "java.lang.String"
     },
     {
-      "sourceType": "com.example.weather.ApiProperty$Api",
+      "sourceType": "com.example.weather.apiProperty.ApiProperty$Api",
       "name": "app.weather.api.url",
       "type": "java.lang.String"
     }

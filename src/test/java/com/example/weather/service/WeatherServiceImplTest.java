@@ -1,6 +1,6 @@
 package com.example.weather.service;
 
-import com.example.weather.ApiProperty;
+import com.example.weather.apiProperty.ApiProperty;
 import com.example.weather.domain.Weather;
 import org.junit.After;
 import org.junit.Before;

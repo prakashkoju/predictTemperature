@@ -6,7 +6,12 @@
     </facet>
     <facet type="web" name="Web">
       <configuration>
-        <webroots />
+        <descriptors>
+          <deploymentDescriptor name="context.xml" url="file://$MODULE_DIR$/META-INF/context.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$" relative="/" />
+        </webroots>
         <sourceRoots>
           <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
@@ -24,7 +29,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8.0_161" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.9.RELEASE" level="project" />

@@ -1,6 +1,6 @@
 package com.example.weather.service;
 
-import com.example.weather.ApiProperty;
+import com.example.weather.apiProperty.ApiProperty;
 import com.example.weather.domain.Location;
 import com.example.weather.exception.OWMResponseErrorHandler;
 import org.slf4j.Logger;
@@ -23,7 +23,7 @@ public class LocationService implements ILocationService{
 
     private final RestTemplate restTemplate;
 
-    private final String authId;
+    public final String authId;
     private final String tokenId;
 
     public LocationService(RestTemplate restTemplate, ApiProperty properties) {

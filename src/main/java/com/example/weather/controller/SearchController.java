@@ -1,12 +1,10 @@
 package com.example.weather.controller;
 
-import com.example.weather.ApiProperty;
+import com.example.weather.apiProperty.ApiProperty;
 import com.example.weather.domain.Location;
 import com.example.weather.domain.Weather;
 import com.example.weather.service.ILocationService;
 import com.example.weather.service.IWeatherService;
-import com.example.weather.service.LocationService;
-import com.example.weather.service.WeatherService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -32,8 +30,9 @@ public class SearchController {
 
 	public SearchController(IWeatherService weatherService, ApiProperty properties, ILocationService locationService) {
 		this.weatherService = weatherService;
-		this.properties = properties;
 		this.locationService=locationService;
+		this.properties = properties;
+
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
@@ -49,7 +48,7 @@ public class SearchController {
 		ModelMap model = new ModelMap();
 		if(!"".equals(locationViewModel.getZip())){
 			List<Location> location=this.locationService.getLocation(locationViewModel.getZip());
-			if(location.stream().flatMap(l ->
+			if(location!=null && location.stream().flatMap(l ->
 					l.getZipcodes().stream()).filter(z -> z.getZipcode().equals(locationViewModel.getZip()))
 					.count()>0){
 				List<WeatherViewModel> weatherSummaryList = getSummary(location.get(0).zipcodes.get(0).getDefault_city());
