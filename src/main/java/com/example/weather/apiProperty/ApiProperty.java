@@ -1,10 +1,11 @@
 package com.example.weather.apiProperty;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 import javax.validation.constraints.NotNull;
 
-@ConfigurationProperties("app.weather")
+@ConfigurationProperties(prefix = "app.weather")
 public class ApiProperty {
 
 	private final Api api = new Api();

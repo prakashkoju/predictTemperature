@@ -7,40 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52ef669d-5398-43e8-9d81-f17e164b0c47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/weather-app.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/weather_app_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/weather_app_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeAssesment/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/weather_app_jar/weatherapp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/weather-app.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jars/weather-app.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/ApiProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/apiProperty/ApiProperty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/apiProperty/ApiProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/apiProperty/ApiProperty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/service/LocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/service/RestInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/service/RestInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weather/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/service/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/weather/controller/SearchControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/weather/controller/SearchControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/weather/controller/WeatherSummaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/weather/controller/WeatherSummaryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/weather/service/WeatherServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/weather/service/WeatherServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring.factories" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/ApiProperty$Api.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/ApiProperty.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weather/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/apiProperty/ApiProperty$Api.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weather/apiProperty/ApiProperty$Api.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/apiProperty/ApiProperty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weather/apiProperty/ApiProperty.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weather/controller/SearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/controller/WeatherViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weather/controller/WeatherViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/domain/Zipcode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weather/domain/Zipcode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/service/LocationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weather/service/LocationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/service/RestInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weather/service/RestInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weather/service/WeatherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weather/service/WeatherService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/weather/controller/SearchControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/weather/controller/SearchControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/weather/controller/WeatherSummaryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/weather/controller/WeatherSummaryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/weather/service/WeatherServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/weather/service/WeatherServiceImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomorrow/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather.rar" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,27 +74,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../waa assignment/CalculatorAsJSP" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Desktop\predictTemperature\src\main\resources\META-INF" />
+      <recent name="C:\Users\USER\Desktop\predictTemperature\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.weather.controller" />
       <recent name="com.example.weather.exception" />
       <recent name="com.example.weather.service" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Desktop\WeatherApp-master\src\main\resources\templates" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.weather.domain" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Desktop\predictTemperature\src\main\resources\META-INF" />
-      <recent name="C:\Users\USER\Desktop\predictTemperature\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Desktop\WeatherApp-master\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -191,6 +173,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -205,6 +190,8 @@
       <workItem from="1571406549232" duration="744000" />
       <workItem from="1571411374797" duration="5053000" />
       <workItem from="1571418814946" duration="13966000" />
+      <workItem from="1571603962939" duration="8459000" />
+      <workItem from="1571619244690" duration="1225000" />
     </task>
     <servers />
   </component>
@@ -240,27 +227,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java</url>
-          <line>47</line>
+          <line>49</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java</url>
-          <line>49</line>
+          <line>51</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java</url>
-          <line>50</line>
+          <line>52</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java</url>
-          <line>53</line>
+          <line>55</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java</url>
-          <line>56</line>
+          <line>58</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -270,7 +257,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/weather/controller/SearchController.java</url>
-          <line>73</line>
+          <line>75</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -280,7 +267,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/weather/apiProperty/ApiProperty.java</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>

@@ -1,7 +1,0 @@
-com\example\weather\controller\SearchControllerTest.class
-com\example\weather\handler\OWMResponseErrorHandlerTest.class
-com\example\weather\controller\WeatherSummaryTest.class
-com\example\weather\service\WeatherServiceImplTest.class
-com\example\weather\exception\OWMExceptionTest.class
-com\example\weather\domain\LocationViewModelTest.class
-com\example\weather\domain\WeatherTest.class

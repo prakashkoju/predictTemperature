@@ -7,6 +7,7 @@ import com.example.weather.service.ILocationService;
 import com.example.weather.service.IWeatherService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -20,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@Component
 public class SearchController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(SearchController.class);
 

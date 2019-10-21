@@ -13,11 +13,11 @@ Update API url and key in src/main/resources/application-prod.properties
 This app has embedded tomcat server. In order to run this website execute below maven command
 mvn spring-boot:run
 
-It will start the embedded tomcat server on port 8082
+It will start the embedded tomcat server on port 8080
 
 # How to Use
-- Access the website using http://localhost:8082/
-- Enter a City Zipcode
+- Access the website using http://localhost:8080/
+- Enter a City or Zipcode
 - Hit Submit button
 - It will display Weather Summary Page
 - Hit back button to go back to pervious page.
