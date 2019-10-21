@@ -4,11 +4,7 @@ WeatherApp - This application will return current weather data from OpenWeatherM
 # Source of Data
 City detail using zipcode is read from http://smartystreets.com using API https://us-zipcode.api.smartystreets.com/lookup?auth-id={authid}&auth-token={tokenid}&zipcode={zipcode}
 Weather data is read from http://openweathermap.org/ using API http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}
-
-# Pre-requisite
-To use this app, you need to register an API Key on http://openweathermap.org/ service.
-Update API url and key in src/main/resources/application-prod.properties
-
+This API has used API keys and IDs personal to me. So I request everybody not to use or distribute unless otherwise permitted.
 # How to run
 This app has embedded tomcat server. In order to run this website execute below maven command
 mvn spring-boot:run
