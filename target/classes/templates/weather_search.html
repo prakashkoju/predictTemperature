@@ -1,0 +1,32 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Weather Search</title>
+</head>
+<body>
+<form th:action="@{/}" th:object="${searchForm}" method="post">
+    <h1>Weather Search</h1>
+    <p></p>
+    <div>
+    Please enter Either city name Or zip code to find weather details :</div>
+    <p><small>*(Zip code has precedence over city name)</small>
+    </p>
+    <table>
+        <tr>
+            <td>City Name:</td>
+            <td><input type="text" name="city" th:field="*{city}" /></td>
+        </tr>
+        <tr>
+            <td>Zip Code:</td>
+            <td><input type="text" name="zip" pattern="[0-9]{5}" th:field="*{zip}" /></td>
+        </tr>
+        <tr><td colspan="2"></tr>
+        <tr>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

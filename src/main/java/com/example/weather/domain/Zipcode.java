@@ -33,12 +33,12 @@ public class Zipcode {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Zipcode zipcode1 = (Zipcode) o;
-        return Objects.equals(default_city, zipcode1.default_city) &&
-                Objects.equals(zipcode, zipcode1.zipcode);
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Zipcode zipcode = (Zipcode) object;
+        return Objects.equals(default_city, zipcode.default_city) &&
+                Objects.equals(this.zipcode, zipcode.zipcode);
     }
 
     @Override

@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.example.weather.apiProperty.ApiProperty",
+      "name": "app.weather",
+      "type": "com.example.weather.apiProperty.ApiProperty"
+    },
+    {
+      "sourceType": "com.example.weather.apiProperty.ApiProperty",
+      "name": "app.weather.api",
+      "sourceMethod": "getApi()",
+      "type": "com.example.weather.apiProperty.ApiProperty$Api"
+    }
+  ],
+  "properties": []
+}

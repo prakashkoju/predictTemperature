@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
-public class LocationService implements ILocationService{
+public class LocationService {
 
     private static final Logger logger = LoggerFactory.getLogger(LocationService.class);
 
@@ -41,7 +41,7 @@ public class LocationService implements ILocationService{
         List<Location> locations = null;
         if(validParameters(zip)) {
             URI url = new UriTemplate(this.locUrl).expand(this.authId, this.tokenId, zip);
-            locations = Arrays.asList(RestInterface.invoke(restTemplate,url, Location[].class));
+            locations = Arrays.asList(RestInvoker.invoke(restTemplate,url, Location[].class));
     }
         return locations;
     }

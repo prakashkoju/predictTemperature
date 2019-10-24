@@ -13,7 +13,7 @@ import org.springframework.web.util.UriTemplate;
 import java.net.URI;
 
 @Service
-public class WeatherService implements IWeatherService {
+public class WeatherService {
 
 	private static final Logger logger = LoggerFactory.getLogger(WeatherService.class);
 
@@ -38,7 +38,7 @@ public class WeatherService implements IWeatherService {
 		if(validParameters(city)) {
 			URI url = new UriTemplate(this.apiUrl).expand(city, this.apiKey);
 
-			weather = RestInterface.invoke(restTemplate,url, Weather.class);
+			weather = RestInvoker.invoke(restTemplate,url, Weather.class);
 		}
 		return weather;
 	}
